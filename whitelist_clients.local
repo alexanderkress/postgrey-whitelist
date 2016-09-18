@@ -1,0 +1,118 @@
+# postgrey whitelist
+
+## -- mail provider -- ##
+
+# gmx - mout.gmx.net[212.227.17.20]
+mout.gmx.net
+gmx.de
+gmx.net
+# all tld
+/^gmx\..*$/
+# all subdomains and tld (tested with regex101.com)
+/^.*\.gmx\..*$/
+
+# tutanota - w1.tutanota.de[81.3.6.162]
+tutanota.de
+tutanota.com
+
+# protonmail - mail3.protonmail.ch[185.70.40.25]
+/^mail\d+\.protonmail\.ch$/
+protonmail.com
+protonmail.ch
+
+# posteo
+posteo.de
+/^posteo\..*$/
+
+# 1und1.com - moutng.kundenserver.de
+/^.*\.kundenserver\.de$/
+
+# webhostone.de
+/^.*\.serverdomain\.org$/
+
+# google.com
+gmail.com
+# all outbound Gmail boxes:
+/^.*-out-.*\.google\.com$/
+googlemail.com
+
+# outlook.com
+/^mail-*\.outbound\.protection\.outlook\.com$/
+outlook.com
+
+# others
+startmail.com
+mailbox.org
+t-online.de
+web.de
+aikq.de
+jpberlin.de
+
+
+## -- mass mail sender -- ##
+mandrill.com
+mandrillapp.com
+mailgun.com
+sendgrid.com
+mailjet.com
+
+
+## -- dmarc -- ##
+dmarc.yahoo.com
+postmarkapp.com
+
+
+## -- companies/organisations -- ##
+debian.org
+google.com
+twitter.com
+apple.com
+itunes.com
+icloud.com
+microsoft.com
+amazon.de
+amazon.com
+/^amazon\..*$/
+feedly.com
+evernote.com
+paypal.de
+nextcloud.com
+xing.com
+dropbox.com
+dropboxmail.com
+clara.net
+claranet.com
+telekom.de
+
+
+## -- development -- ##
+googlegroups.com
+github.com
+github.net
+bitbucket.org
+travis-ci.org
+trello.com
+
+
+## -- status pages -- ##
+statuscake.com
+pingdom.com
+
+
+## -- domain provider -- ##
+godaddy.com
+domain-offensive.de
+strato.de
+
+
+## -- encryption -- ##
+gnupg.org
+letsencrypt.org
+comodo.com
+comodo.net
+startcom.org
+
+
+## -- CIDR IP addresses -- ##
+84.200.20.153
+84.200.211.0/24
